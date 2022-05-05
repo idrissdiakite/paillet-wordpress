@@ -19,7 +19,7 @@ Rien d'exceptionnel, la (seule) technicité a été de trouver un moyen de conse
 ![Screenshot](https://github.com/idrissdiakite/paillet-wordpress/blob/main/Contact/screenshot.png)
 
 Mise en place d'un devis sous forme de formulaire (avec radio bouton, checkbox, textarea, email, number etc...).  
-Gestion d'envoi du formulaire entièrement géré en PHP avec la méthode $\_POST.
+Envoi du formulaire entièrement géré en PHP avec la méthode $\_POST.
 
 ## [Modal](https://github.com/idrissdiakite/paillet-wordpress/tree/main/Modal)
 
