@@ -1,0 +1,78 @@
+.home
+    .header
+        position: fixed
+        top: 0
+        left: 0
+
+.header
+    display: flex
+    justify-content: space-between
+    align-items: center
+    width: 100vw
+    padding: 2rem 6.5rem
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.1)
+    background-color: $g-bg-white
+    position: relative
+    z-index: 9999
+
+    &__logo
+        img
+            height: 4rem
+
+    .navbar
+        color: $t-primary
+
+        &__menu
+            display: flex
+            justify-content: flex-end
+            align-items: center
+            height: 4rem
+
+        &__link
+            margin-right: 4rem
+            transition: color .25s ease-in-out
+            position: relative
+            height: 5rem
+            margin-top: 3.5rem
+
+            &:hover
+                color: $g-primary
+                z-index: 5
+
+                .submenu
+                    display: block
+
+            &.active
+                color: $g-primary
+            &:last-child
+                margin-right: 0
+            
+            svg
+                margin-left: .5rem
+                +size(.7em, 1em)
+                vertical-align: middle
+                stroke: $g-primary
+
+            .submenu
+                position: absolute
+                left: 50%
+                transform: translateX(-50%) translateY(2.9rem)
+                color: $t-secondary
+                justify-content: flex-start
+                align-items: flex-start
+                flex-direction: column
+                padding: 4.5rem
+                background-color: $g-bg-white
+                z-index: -1
+                display: none
+                box-shadow: 0 0 30px rgba(0, 0, 0, 0.1)
+
+                &__link
+                    transition: color .25s ease-in-out
+                    margin-top: 1.5rem
+                    white-space: nowrap
+
+                    &:first-child
+                        margin-top: 0
+                    &:hover
+                        color: $g-primary

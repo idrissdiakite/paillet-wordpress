@@ -1,0 +1,170 @@
+.global-mansory
+  padding: 13rem 14rem
+  background-color: $g-bg-grey
+  display: grid
+  row-gap: 6rem
+  column-gap: 2rem
+  column-count: 2
+  grid-template-columns: repeat(2, 1fr)
+
+  &__card
+    position: relative
+    display: inline-block
+
+    &--small
+      .global-mansory__image
+        height: 25rem
+    
+    &--medium
+      .global-mansory__image
+        height: 40rem
+    
+    &--large
+      .global-mansory__image
+        height: 60rem
+    
+  &__zoom
+    position: absolute
+    top: 3.5rem
+    right: 3.5rem
+    background-color: $g-bg-white
+    cursor: pointer
+
+  &__image
+    img
+      +cover
+
+  &__title
+    color: $t-primary
+    margin-top: 3rem
+
+  &__description
+    color: $t-secondary
+    margin-top: 1.5rem
+
+  &__modal 
+    display: none
+
+    &--overlay
+      position: fixed
+      top: 0
+      left: 0
+      width: 100vw
+      height: 100vh
+
+      background-color: rgba(0, 0, 0, 0.9)
+      z-index: 1000
+
+    &-wrapper 
+      position: fixed
+      top: 0
+      left: 0
+      width: 100%
+      height: 100%
+      overflow-y: auto
+      overflow-x: hidden
+      outline: 0
+      z-index: 1050
+  
+    &--body
+      position: relative
+      height: 100vh
+      margin: auto
+      +flex-center
+
+    &--image-container
+      position: relative
+      width: 70%
+      margin: auto
+      z-index: 100
+      +flex-center
+
+    &--image 
+      position: relative
+
+      img 
+        +cover
+        width: 700px !important
+        height: 450px
+
+    &--image:not(.active)   
+      display: none
+
+    &--cross 
+      position: absolute 
+      top: 20px  
+      right: 20px 
+      height: 25px
+      width: 25px
+      padding: 0.6rem
+      font-size: 1rem
+      background-color: white
+      cursor: pointer
+      +flex-center
+
+      svg
+        fill: $g-primary
+
+    &--dots
+      position: absolute
+      bottom: -2rem
+      left: 50%
+      transform: translateX(-50%)
+
+      ul
+        display: flex
+
+      li
+        margin-left: 1.5rem
+        +size(1rem)
+        background-color: $t-secondary
+        border-radius: 50%
+        cursor: pointer
+
+        &.active
+          background-color: $g-primary
+
+        &:first-child
+          margin-left: 0
+
+    &__arrows-container
+      position: absolute
+      top: 50%
+      transform: translateY(-50%)
+      z-index: 10
+      +flex-center
+      width: 100%
+      padding: 0 15rem
+
+    &__arrows
+      display: flex
+      justify-content: space-between
+      align-items: center
+      width: 100%
+
+// Javascript (modal.ts)
+  
+.global-mansory__modal.active
+    display: block
+
+// Animations
+
+@keyframes slideshow-left-to-right
+  0%
+    transform: translateX(-100%)
+  40%
+    transform: translateX(0)
+  60%
+    transform: translateX(0)
+  100%
+    transform: translateX(100%)
+
+@keyframes slideshow-right-to-left
+  0%
+    transform: translateX(100%)
+  40%
+    transform: translateX(0)
+  60%
+    transform: translateX(0)
+  100%
+    transform: translateX(-100%)

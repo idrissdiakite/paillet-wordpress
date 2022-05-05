@@ -1,0 +1,32 @@
+.global_little_images_slideshow
+    position: relative
+    padding: 10rem
+    background-color: $g-bg-black !important
+
+    &__images 
+      display: flex
+      justify-content: space-between
+      padding: 0 15rem
+
+    &__image:not(.active)   
+      display: none
+    
+    &__image img 
+      +cover
+      width: 175px
+      height: 175px
+
+    &__arrows-container
+      position: absolute
+      padding: 0 20rem 0 0
+      top: 50%
+      transform: translateY(-50%)
+      z-index: 10
+      +flex-center
+      width: 100%
+
+    &__arrows
+      display: flex
+      justify-content: space-between
+      align-items: center
+      width: 90%

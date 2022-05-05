@@ -1,0 +1,31 @@
+.activity-text-2-col
+  position: relative
+  padding-top: 5rem
+
+  &:before, &:after
+    content: ''
+    position: absolute
+    background-color: $g-primary
+    +size(6rem, 1px)
+    top: 6.5rem
+
+  &:before
+    left: 0
+
+  &:after
+    right: 0
+
+  h3 
+    color: $t-primary
+    margin-bottom: 2rem
+    text-align: center
+
+  p 
+    color: $t-secondary
+
+  &__text
+    display: flex
+    justify-content: space-between
+
+    div:first-child
+      margin-right: 2rem

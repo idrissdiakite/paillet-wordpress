@@ -1,0 +1,107 @@
+.grid-card__modal 
+  display: none
+  
+  &--overlay
+    position: fixed
+    top: 0
+    left: 0
+    width: 100vw
+    height: 100vh
+
+    background-color: rgba(0, 0, 0, 0.2)
+    z-index: 1000
+
+  &--wrapper 
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    overflow-y: auto
+    overflow-x: hidden
+    outline: 0
+    z-index: 1050
+      
+  &--container
+    height: 100vh
+    margin: auto
+    +flex-center
+
+  &--cross 
+    position: absolute 
+    +flex-center
+    top: 20px  
+    right: 20px 
+    height: 30px
+    width: 30px
+    padding: 0.8rem
+    cursor: pointer
+    z-index: 2
+    background-color: $t-light
+
+    svg
+      fill: $g-primary
+
+  &--scroll-container
+    position: absolute
+    top: 80px 
+    right: 33px 
+    width: 5px 
+    height: 250px
+    z-index: 2
+
+  &--scrollbar
+    position: fixed
+    width: 5px 
+    height: 250px
+    background-color: $t-light-grey
+
+    &--progress
+      position: fixed
+      width: 5px 
+      max-height: 250px
+      background-color: $g-primary
+      transition: 0.5 ease-in-out
+      z-index: 3
+
+  &--body  
+    position: relative
+    height: 400px 
+    width: 700px
+    overflow-y: auto
+    overflow-x: hidden
+    background-color: $t-light
+    scrollbar-width: none
+
+    &--header 
+      position: relative
+      height: 200px
+
+      img 
+        height: 100%
+        +cover
+        filter: opacity(0.8)
+
+      h2 
+        position: absolute
+        top: 50%
+        left: 8%
+        transform: translateY(-50%)
+        color: $t-light
+        z-index: 2
+
+      &--overlay 
+        position: absolute
+        top: 0
+        left: 0
+        height: 100%
+        width: 100%
+        background: rgba(0,0,0,0.9)
+
+    &--content
+      padding: 5rem 6rem
+
+// Javascript (modal.ts)
+  
+.grid-card__modal.active
+    display: block
