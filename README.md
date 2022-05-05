@@ -45,6 +45,6 @@ Intégration de flèches (droite/gauche) et de boutons afin de faire défiler le
 
 ![Screenshot](https://github.com/idrissdiakite/paillet-wordpress/blob/main/Slider/screenshot.png)
 
-Mini slider d'images afin de mettre en avant les partenaires de l'entreprise
+Mini slider d'images afin de mettre en avant les partenaires de l'entreprise.
 
 [demo](https://drive.google.com/file/d/15-C6DHluiOAtnM5FXbUJfEkVsBJZ666T)
