@@ -1,4 +1,4 @@
-# Paillet (Wordpress + ACF, Sass, TypeScript, Javascript)
+# Paillet (Wordpress + ACF + Sass + TypeScript + Javascript)
 
 ![Screenshot](screenshot.png)
 
