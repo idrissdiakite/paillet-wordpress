@@ -2,22 +2,22 @@
 
 ![Screenshot](screenshot.png)
 
-Participation à la création et au développement d'un thème Wordpress from scratch au sein de l'agence Zelda Communication.  
-Le but était de créer un thème "de base", flexible et potentiellement réutilisable (grâce notamment à l'utilisation des Advanced Custom Fields).
+Participation à la création et au développement d'un thème Wordpress from scratch au sein de l'agence Zelda Communication. Le but était de créer un thème "de base", flexible et potentiellement réutilisable (grâce notamment à l'utilisation des Advanced Custom Fields).
 
 Extrait de quelques pages et fonctionnalités développées par mes soins:
 
-## Menu
+## [Menu](https://github.com/idrissdiakite/paillet-wordpress/tree/main/Menu)
 
 Rien d'exceptionnel, la (seule) technicité a été de trouver un moyen de conserver le sous menu ouvert lorsque le titre n'est plus hover.
 
 [demo](https://drive.google.com/file/d/1l-UCgMKwm_zuN-plTjGwKr8sf_3aaY8v)
 
-## Contact
+## [Contact](https://github.com/idrissdiakite/paillet-wordpress/tree/main/Contact)
 
-Mise en place d'un devis sous forme de formulaire (avec radio bouton, checkbox, textarea, email, number etc...) + gestion d'envoi du formulaire entièrement géré en PHP avec la méthode $\_POST
+Mise en place d'un devis sous forme de formulaire (avec radio bouton, checkbox, textarea, email, number etc...).
+Gestion d'envoi du formulaire entièrement géré en PHP avec la méthode $\_POST.
 
-## Modal
+## [Modal](https://github.com/idrissdiakite/paillet-wordpress/tree/main/Modal)
 
 Affichage des différents chantiers de l'entreprise sous forme de grid.  
 Lorsqu'on clique sur le bouton Découvrir, cela ouvre une modale avec les différentes informations associées au chantier cliqué.  
@@ -25,7 +25,7 @@ Intégration d'un slider d'images à l'intérieur de la modal + création d'une 
 
 [demo](https://drive.google.com/file/d/1V5Z5cy6Tiuerrsw6LfzCUaQNMcHDDdEE)
 
-## Modal + Slider
+## [Modal + Slider](https://github.com/idrissdiakite/paillet-wordpress/tree/main/Modal%20%2B%20Slider)
 
 Présentation du parc matériel de l'entreprise sous forme d'images style masonry.  
 Lorsqu'on clique sur le bouton loupe cela fait apparaitre un slider d'images associé au materiel cliqué.  
@@ -33,7 +33,7 @@ Intégration de flèches (droite/gauche) et de boutons afin de faire défiler le
 
 [demo](https://drive.google.com/file/d/1lA1zsR5ie58lftalMt_NGxeYU-39iAd3)
 
-## Slider
+## [Slider](https://github.com/idrissdiakite/paillet-wordpress/tree/main/Slider)
 
 Mini slider d'images afin de mettre en avant les partenaires de l'entreprise
 
