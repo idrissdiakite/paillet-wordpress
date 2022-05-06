@@ -12,7 +12,7 @@ Extrait de quelques pages et fonctionnalités développées par mes soins:
 
 Rien d'exceptionnel, la (seule) technicité a été de trouver un moyen de conserver le sous menu ouvert lorsque le titre n'est plus hover.
 
-[demo](https://drive.google.com/file/d/1l-UCgMKwm_zuN-plTjGwKr8sf_3aaY8v)
+<a href="https://drive.google.com/file/d/1l-UCgMKwm_zuN-plTjGwKr8sf_3aaY8v" target="_blank">demo</a>
 
 ## [Contact](https://github.com/idrissdiakite/paillet-wordpress/tree/main/Contact)
 
@@ -29,7 +29,7 @@ Affichage des différents chantiers de l'entreprise sous forme de grid.
 Lorsqu'on clique sur le bouton Découvrir, cela ouvre une modale avec les différentes informations associées au chantier cliqué.  
 Intégration d'un slider d'images à l'intérieur de la modal + création d'une scrollbar personnalisée et dynamique.
 
-[demo](https://drive.google.com/file/d/1V5Z5cy6Tiuerrsw6LfzCUaQNMcHDDdEE)
+[demo](https://drive.google.com/file/d/1lA1zsR5ie58lftalMt_NGxeYU-39iAd3)
 
 ## [Modal + Slider](https://github.com/idrissdiakite/paillet-wordpress/tree/main/Modal%20%2B%20Slider)
 
@@ -39,7 +39,7 @@ Présentation du parc matériel de l'entreprise sous forme d'images style masonr
 Lorsqu'on clique sur le bouton loupe cela fait apparaitre un slider d'images associé au materiel cliqué.  
 Intégration de flèches (droite/gauche) et de boutons afin de faire défiler le slider.
 
-[demo](https://drive.google.com/file/d/1lA1zsR5ie58lftalMt_NGxeYU-39iAd3)
+[demo](https://drive.google.com/file/d/1V5Z5cy6Tiuerrsw6LfzCUaQNMcHDDdEE)
 
 ## [Slider](https://github.com/idrissdiakite/paillet-wordpress/tree/main/Slider)
 
