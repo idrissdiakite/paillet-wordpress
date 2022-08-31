@@ -11,13 +11,13 @@
     <div class="informations__text">
       <h2 class="t-h2"><?= $informations['title'] ?></h2>
       <div class="t-p1"><?= $informations['description'] ?></div>
-      <span></span>
+      <span/>
     </div>
     <div class="contact">
       <?php if ($informations['show_phone']) : ?>
         <div class="contact__row">
           <div class="contact__image">
-            <img class="svg-replace" src="phone.svg" />
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18" class="svg-replace"><g><g><path fill="#479f47" d="M3.62 7.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V17c0 .55-.45 1-1 1C7.61 18 0 10.39 0 1c0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02z"/></g></g></svg>
           </div>
           <div class="contact__text">
             <p class="t-p2"><?= $informations['options_phone']['title'] ?></p>
@@ -28,7 +28,7 @@
       <?php if ($informations['show_address']) : ?>
         <div class="contact__row">
           <div class="contact__image">
-            <img class="svg-replace" src="address.svg" />
+            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="20" viewBox="0 0 14 20" class="svg-replace"><g><g><path fill="#479f47" d="M7 9.5a2.5 2.5 0 0 1 0-5 2.5 2.5 0 0 1 0 5zM7 0C3.13 0 0 3.13 0 7c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7z"/></g></g></svg>
           </div>
           <div class="contact__text">
             <p class="t-p2"><?= $informations['options_address']['title'] ?></p>
@@ -39,7 +39,7 @@
       <?php if ($informations['show_mail']) : ?>
         <div class="contact__row">
           <div class="contact__image">
-            <img class="svg-replace" src="mail.svg" />
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="16" viewBox="0 0 20 16" class="svg-replace"><g><g><path fill="#479f47" d="M10 9L2 4V2l8 5 8-5v2zM2 0C.9 0 .01.9.01 2L0 14c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2z"/></g></g></svg>
           </div>
           <div class="contact__text">
             <p class="t-p2"><?= $informations['options_mail']['title'] ?></p>
@@ -66,7 +66,7 @@
               <div class="input-group rgpd">
                 <div class="input-group__checkbox">
                   <label class="t-p1" for="rgpd"><?= get_field('form')['rgpd'] ?></label>
-                  <input type="checkbox" id="rgpd" name="rgpd" required />
+                  <input type="checkbox" id="rgpd" name="rgpd" required=""/>
                 </div>
               </div>
             <?php endif ?>
@@ -77,7 +77,7 @@
       <div class="form__footer">
         <p class="t-h3-2">* champs obligatoires</p>
         <div class="form__buttons">
-          <input class="t-b" type="submit" name="submit" value="Envoyer ma demande" />
+          <input class="t-b" type="submit" name="submit" value="Envoyer ma demande"/>
         </div>
       </div>
 

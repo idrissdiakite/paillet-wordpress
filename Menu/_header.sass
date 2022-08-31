@@ -15,12 +15,35 @@
     position: relative
     z-index: 9999
 
+    +break-max($small-laptop)
+        flex-direction: column
+        align-items: flex-start
+        justify-content: flex-start
+        padding: 3rem 5rem
+        position: fixed
+
     &__logo
         img
             height: 4rem
 
+    &__burger
+        position: fixed
+        top: 3rem
+        right: 5rem
+        cursor: pointer
+
+        +break-min($phone)
+            font-size: 3rem
+
+        +break-min($small-laptop)
+            display: none
+
     .navbar
         color: $t-primary
+
+        +break-max($small-laptop)
+            &.hide
+                display: none
 
         &__menu
             display: flex
@@ -28,12 +51,28 @@
             align-items: center
             height: 4rem
 
+            +break-max($small-laptop)
+                flex-direction: column
+                justify-content: flex-start
+                align-items: flex-start
+                height: auto
+
+            +break-max($tablet)
+                margin-top: 2rem
+
         &__link
             margin-right: 4rem
             transition: color .25s ease-in-out
             position: relative
             height: 5rem
             margin-top: 3.5rem
+
+            +break-max ($small-laptop)
+                height: auto
+                margin-top: 3rem
+
+            +break-max ($phone)
+                margin-top: 1rem
 
             &:hover
                 color: $g-primary
@@ -53,6 +92,9 @@
                 vertical-align: middle
                 stroke: $g-primary
 
+                +break-max ($small-laptop)
+                    margin-left: 1.5rem
+
             .submenu
                 position: absolute
                 left: 50%
@@ -66,6 +108,10 @@
                 z-index: -1
                 display: none
                 box-shadow: 0 0 30px rgba(0, 0, 0, 0.1)
+
+                +break-max($small-laptop)
+                    transform: translateX(-17%) translateY(0.1rem)
+                    padding: 2rem
 
                 &__link
                     transition: color .25s ease-in-out

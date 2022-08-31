@@ -1,0 +1,64 @@
+.activities-text-2-col
+  padding: 15rem
+  display: flex
+  justify-content: center
+  align-items: flex-start
+  flex-direction: column
+  position: relative
+
+  +break-max($small-laptop)
+    padding: 10rem 5rem
+
+  &:before, &:after
+    content: ''
+    position: absolute
+    background-color: $g-primary
+    +size(6rem, 1px)
+    top: 17rem
+
+    +break-max($small-laptop)
+      content: none
+
+  &:before
+    left: 0
+
+  &:after
+    right: 0
+
+  h2
+    color: $t-primary
+    margin-bottom: 3rem
+
+  &__text
+    display: flex
+    justify-content: space-between
+    align-items: flex-start
+
+    > *
+      &:first-child
+        margin-right: 8rem
+
+        +break-max($small-laptop)
+          margin-right: 5rem
+
+    > *
+      &:last-child
+        position: relative
+
+        &:before
+          content: ''
+          position: absolute
+          background-color: $g-grey
+          +size(100%, 1px)
+          top: -5.5rem
+          left: 0
+
+          +break-max($small-laptop)
+            content: none
+
+    p
+      color: $t-secondary
+      margin-bottom: 2rem
+
+      &:last-child
+        margin-bottom: 0

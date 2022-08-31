@@ -5,10 +5,18 @@
   flex-direction: column
   background-color: $g-bg-grey
 
+  +break-max($small-laptop)
+    padding-top: 10rem
+    padding-bottom: 7rem
+
   &__text
     +flex-center
     flex-direction: column
     width: 40%
+
+    +break-max($small-laptop)
+      width: 60%
+
     h2
       color: $t-primary
       margin-bottom: 2rem
@@ -26,6 +34,10 @@
     padding-left: 14rem
     padding-right: 14rem
 
+    +break-max($small-laptop)
+      padding-left: 5rem
+      padding-right: 5rem
+
     .grid-card
       margin-bottom: 6rem
       flex: 25%
@@ -37,6 +49,10 @@
       margin-right: 5rem
       height: 100%
       background-color: $g-bg-white
+
+      +break-max($small-laptop)
+        margin-right: 2rem
+
       &:nth-child(3n)
         margin-right: 0
       &:last-child
@@ -53,6 +69,10 @@
         justify-content: center
         align-items: flex-start
         padding: 3.5rem
+
+        +break-max($small-laptop)
+          padding: 2rem
+
         h3
           margin-bottom: 1.5rem
           color: $t-primary

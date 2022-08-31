@@ -30,14 +30,17 @@
   &--cross 
     position: absolute 
     +flex-center
-    top: 20px  
-    right: 20px 
+    right: 0px 
     height: 30px
     width: 30px
     padding: 0.8rem
     cursor: pointer
     z-index: 2
     background-color: $t-light
+
+    +break-max($tablet)
+        position: fixed
+        right: 0px
 
     svg
       fill: $g-primary
@@ -49,6 +52,9 @@
     width: 5px 
     height: 250px
     z-index: 2
+
+    +break-max($tablet)
+        display: none
 
   &--scrollbar
     position: fixed
@@ -71,7 +77,14 @@
     overflow-y: auto
     overflow-x: hidden
     background-color: $t-light
+
+    // ne pas afficher la scrollbar sur IE, Edge & Firefox
+    -ms-overflow-style: none
     scrollbar-width: none
+
+    // ne pas afficher la scrollbar sur Chrome, Safari & Opera
+    &::-webkit-scrollbar
+      display: none
 
     &--header 
       position: relative

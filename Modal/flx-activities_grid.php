@@ -10,7 +10,7 @@
       <?php $fields = get_fields($child) ?>
       <div class="grid-card">
         <div class="grid-card__image">
-          <img src="<?= $fields['options_box']['image']['url'] ?>" alt="<?= $fields['options_box']['image']['alt'] ?>" />
+          <img src="<?= $fields['options_box']['image']['url'] ?>" alt="<?= $fields['options_box']['image']['alt'] ?>"/>
         </div>
         <div class="grid-card__text">
           <h3 class="t-h3"><?= $fields['options_box']['title'] ?></h3>
@@ -18,10 +18,9 @@
             <?= $fields['options_box']['description'] ?>
           </div>
           <div class="grid-card__button">
-            <span class="button t-b">Découvrir<img class="svg-replace" src="arrow_right.svg" /></span>
+            <span class="button t-b">Découvrir<svg style="fill: none; stroke-miterlimit: 20; stroke-width: .2rem;" data-name="Arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 9.3732 6.12346" class="svg-replace"><path style="transform: rotate(-90deg); transform-origin: center;" d="M.709.70524h0l3.979,4h0l3.976-4h0"/></svg></span>
           </div>
         </div>
-        
         <?php $imageHead = $fields['flex_content'][1]['clone_image_full']['image']['url'] ?>
         <?php $title = $fields['options_box']['title'] ?>
         <?php $textOneCols = $fields['flex_content'][0]["clone_text_2_col"]["text"] ?>
@@ -34,15 +33,15 @@
             <div class="grid-card__modal--wrapper">
               <div class="grid-card__modal--container">
                 <div class="grid-card__modal--body">
+                  <span class="grid-card__modal--cross"><svg width="20px" height="20px" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" class="svg-replace"><path d="M14.348 14.849a1.2 1.2 0 0 1-1.697 0L10 11.819l-2.651 3.029a1.2 1.2 0 1 1-1.697-1.697l2.758-3.15-2.759-3.152a1.2 1.2 0 1 1 1.697-1.697L10 8.183l2.651-3.031a1.2 1.2 0 1 1 1.697 1.697l-2.758 3.152 2.758 3.15a1.2 1.2 0 0 1 0 1.698z"/></svg></span>
                   <div class="grid-card__modal--scroll-container">
                     <span class="grid-card__modal--scrollbar"> </span>
                     <span class="grid-card__modal--scrollbar--progress"> </span>
                   </div>
-                  <span class="grid-card__modal--cross"><img class="svg-replace" src="cross.svg" /></span>
                   <div class="grid-card__modal--body--header">
                     <span class="grid-card__modal--body--header--overlay">
                       <img src="<?= $imageHead ?>" alt="">
-                    </span>
+                    </img></span>
                     <h2 class="t-h2">
                       <?= $title ?>
                     </h2>
@@ -57,7 +56,7 @@
                     <section class="activity-slideshow">
                       <?php foreach ($images as $key => $value) : ?>
                         <div class="activity-slideshow--image<?= $key === 0 ? ' active' : '' ?>">
-                          <img src="<?= $value['url'] ?>" alt="<?= $value['alt'] ?>" />
+                          <img src="<?= $value['url'] ?>" alt="<?= $value['alt'] ?>"/>
                         </div>
                       <?php endforeach ?>
 
