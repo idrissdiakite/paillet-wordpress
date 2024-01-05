@@ -2,7 +2,7 @@
 
 ![Screenshot](screenshot.png)
 
-Participation à la création et au développement d'un thème Wordpress from scratch au sein de l'agence Zelda Communication. Le but était de créer un thème de base, flexible et potentiellement réutilisable (grâce notamment à l'utilisation des Advanced Custom Fields).
+Développement d'un thème Wordpress from scratch au sein de l'agence Zelda Communication. Le but était de créer un thème de base, flexible et potentiellement réutilisable (grâce notamment à l'utilisation des Advanced Custom Fields).
 
 Extrait de quelques pages et fonctionnalités développées par mes soins (responsive compris):
 
